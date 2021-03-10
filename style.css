@@ -1,1 +1,48 @@
 @charset "UTF-8";
+
+* {
+  color: #6c6c6c;
+}
+
+.common-wrapper {
+  width: 960px;
+  margin: 50px auto;
+}
+
+.list-content li {
+  padding: 20px;
+}
+
+.list-content li:nth-child(odd) {
+  background-color: #d5d5d5;
+}
+
+.list-content li:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+#box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 200px;
+  width: 30%;
+  background-color: yellow;
+
+}
+
+.box:nth-child(-n+6) {
+  margin-bottom: 40px;
+}
+
+.box:not(:nth-child(3n)) {
+  margin-right: 5%;
+}
+
+.box:nth-child(1),
+.box:nth-child(5),
+.box:nth-child(9) {
+  background-color: orange;
+}
